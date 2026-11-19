@@ -25,6 +25,61 @@ footer{padding:26px 0 35px;display:flex;justify-content:space-between;gap:20px;c
 @media(max-width:850px){.wrap{width:min(100% - 40px,1240px)}.hero{grid-template-columns:1fr;padding-top:70px;min-height:auto}.hero-art{height:480px;min-height:0;grid-row:1}.hero-copy{padding-bottom:60px}.hero-aside{bottom:15px}.about-layout,.skills-layout{grid-template-columns:1fr;gap:45px}.work-card{grid-template-columns:45px 1fr 40px}.work-card p{grid-column:2;grid-row:2}.work-card .arrow{grid-column:3;grid-row:1}.section{padding:90px 0}}
 @media(max-width:560px){.wrap{width:calc(100% - 32px)}.topbar{height:66px}.navlinks{gap:15px;font-size:10px}.navlinks a:nth-child(2){display:none}.nav-note{display:none}.hero{padding:38px 0 65px;gap:30px}.hero-art{height:360px}.hero h1{font-size:clamp(62px,17vw,90px);margin:25px 0}.hero-desc{font-size:13px}.hero-aside{font-size:8px;gap:16px}.hero-actions{gap:16px;flex-wrap:wrap}.section-top{display:block;margin-bottom:38px}.section-note{margin-top:18px}.section-title{font-size:48px}.about-statement{font-size:24px}.work-card{grid-template-columns:30px 1fr 34px;gap:12px;padding:24px 0}.work-card h3{font-size:23px}.work-card p{font-size:11px}.work-card .arrow{width:32px;height:32px}.skills-layout{gap:28px}.skill-chip{padding:11px 13px;font-size:11px}.contact-inner{display:block}.contact-title{font-size:65px}.contact-links{margin-top:35px}.contact-section{padding:75px 0}footer{flex-wrap:wrap;font-size:8px}.footer-right{gap:14px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+
+/* Dark fintech-inspired portfolio skin */
+:root{--paper:#090b0a;--ink:#f3f5f2;--muted:#929a94;--line:#252b27;--acid:#10b981;--orange:#a3e635;--night:#0e1210}
+body{background:var(--paper);color:var(--ink)}
+.grain{opacity:.055}
+.topbar{border-color:var(--line);background:#090b0acc;backdrop-filter:blur(18px)}
+.wordmark span,.hero-kicker,.eyebrow:before{color:var(--acid)}
+.navlinks{color:#a4aca6}.navlinks a:hover,.text-link:hover{color:var(--acid)}
+.nav-note i{background:var(--acid);box-shadow:0 0 0 4px #10b98120}
+.hero-desc,.about-copy,.section-note,.skills-intro{color:#9aa39c}
+.cta{background:var(--acid);color:#04110b}.cta:hover{background:#a3e635;color:#10140e}
+.text-link{border-color:#48534b}
+.hero-art{background:#111914;border:1px solid #29352d}
+.art-label,.art-number{color:#84948a}.art-caption{color:#c0c9c1}.art-stamp{border-color:#627568;color:#b8c7bc}
+.marquee{background:#101b15;border-color:#2a3b30;color:#d9fbe9}.marquee b{color:var(--acid)}
+.section{border-color:var(--line)}
+.about-statement em,.section-title em{color:var(--acid)}
+.fact{border-color:var(--line)}.fact span:first-child{color:#8a958d}
+.work-section{background:#0e1210}.work-section:before{color:#ffffff03}
+.work-card{border-color:#29332d}.work-card p{color:#a1aaa3}.work-card .index{color:#839087}
+.work-card .arrow{border-color:#536158}.work-card:hover .arrow{background:var(--acid);color:#07110b;border-color:var(--acid)}
+.pill{border-color:#3a4940;color:#aebbb2}
+.skill-chip{border-color:#303a33;color:#e5ebe6;background:#111713}
+.skill-chip:hover{background:var(--acid);border-color:var(--acid);color:#07110b}
+.contact-section{background:#b9f36b;color:#10170d}
+.contact-section .eyebrow:before{background:#17210f}.contact-copy{color:#43522f}
+.contact-links a{border-color:#809e4a}.contact-links a:hover{color:#e34f32}
+footer{color:#7f8b82}.footer-right a:hover{color:var(--acid)}
+.cursor{mix-blend-mode:screen}
+.pulse{padding:0 0 76px}
+.pulse-head{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding:17px 0;color:#8c9990;font:9px var(--mono);letter-spacing:.1em}
+.pulse-status{color:#b9c5bc}.pulse-status i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--acid);margin-right:8px;box-shadow:0 0 12px #10b981}
+.pulse-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:14px}
+.pulse-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.metric-card,.trajectory{background:linear-gradient(145deg,#141a16,#0f1411);border:1px solid #27322b;border-radius:8px}
+.metric-card{padding:20px 16px;display:flex;flex-direction:column;min-height:148px}
+.metric-card .mono,.trajectory .mono{font-size:8px;letter-spacing:.1em;color:#87968c}
+.metric-card strong{font:500 42px var(--mono);letter-spacing:-.09em;color:#e8f4eb;margin:17px 0 7px;font-variant-numeric:tabular-nums}
+.metric-card small{font-size:10px;color:#849188}
+.trajectory{padding:20px 22px 13px;min-width:0;overflow:hidden}
+.trajectory-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.trajectory h3{font-size:21px;letter-spacing:-.06em;margin:8px 0 0}.trajectory h3 em{font-family:var(--serif);color:var(--acid)}
+.trajectory-tag{color:var(--acid)!important;border:1px solid #10b98145;padding:6px 8px;white-space:nowrap}
+.trajectory-chart{width:100%;height:118px;overflow:visible;margin-top:12px}
+.chart-grid{fill:none;stroke:#ffffff0d;stroke-width:1;stroke-dasharray:3 6}
+.chart-area{fill:url(#curveFill);opacity:0;animation:areaIn 1.5s 1s forwards}
+.chart-line{fill:none;stroke:#10b981;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:900;stroke-dashoffset:900;filter:drop-shadow(0 0 5px #10b98180);animation:drawCurve 2s .25s cubic-bezier(.2,.7,.2,1) forwards}
+.chart-halo{fill:#10b98122;transform-box:fill-box;transform-origin:center;animation:haloPulse 1.8s 2.1s ease-in-out infinite}
+.chart-peak{fill:#a3e635;filter:drop-shadow(0 0 5px #a3e6);opacity:0;animation:peakIn .4s 2.1s forwards}
+.trajectory-foot{display:flex;justify-content:space-between;gap:8px;font:7px var(--mono);letter-spacing:.08em;color:#77847a}
+.current-label{color:var(--acid)}
+@keyframes drawCurve{to{stroke-dashoffset:0}}@keyframes areaIn{to{opacity:1}}@keyframes peakIn{to{opacity:1}}@keyframes haloPulse{50%{transform:scale(1.5);opacity:.5}}
+@media(max-width:850px){.pulse-grid{grid-template-columns:1fr}.pulse{padding-bottom:58px}}
+@media(max-width:560px){.pulse-metrics{gap:7px}.metric-card{padding:14px 10px;min-height:126px}.metric-card strong{font-size:32px;margin:14px 0 6px}.metric-card .mono{font-size:7px}.metric-card small{font-size:9px}.trajectory{padding:17px 14px 12px}.trajectory-foot{font-size:6px}.trajectory h3{font-size:18px}.trajectory-tag{font-size:7px}.pulse-head{font-size:8px}}
+
 </style>
 </head>
 <body>
@@ -35,6 +90,28 @@ footer{padding:26px 0 35px;display:flex;justify-content:space-between;gap:20px;c
 <div class="hero-copy"><div class="hero-kicker">Independent mind · Student developer</div><h1>Ideas<br>into <span class="serif">real</span><br><span class="stroke">things.</span></h1><p class="hero-desc">I'm <strong>Surya Neerukonda.</strong> I explore code, creative technology and AI — then turn what I learn into things people can actually use.</p><div class="hero-actions"><a class="cta" href="#work">EXPLORE SELECTED WORK <span>↗</span></a><a class="text-link" href="#about">A LITTLE ABOUT ME ↓</a></div></div>
 <div class="hero-art" id="heroArt"><div class="art-label">FORM STUDY / 001 — INTERACTIVE CANVAS</div><div class="art-stamp">CURIOUS<br>BY DESIGN<br>✳</div><canvas class="art-canvas" id="artCanvas" aria-label="Animated generative line sculpture"></canvas><div class="art-caption">A little curiosity goes a long way.</div><div class="art-number">MOVE YOUR POINTER / 01—04</div></div>
 <div class="hero-aside"><span>BASED IN INDIA</span><span>CODE · DESIGN · EXPERIMENT</span><span>SCROLL TO EXPLORE ↓</span></div>
+</section>
+
+<section class="pulse wrap" aria-label="Portfolio overview">
+  <div class="pulse-head"><span class="mono">LIVE PORTFOLIO OVERVIEW</span><span class="pulse-status"><i></i> BUILDING IN PUBLIC</span></div>
+  <div class="pulse-grid">
+    <div class="pulse-metrics">
+      <div class="metric-card"><span class="mono">PROJECTS SHIPPED</span><strong class="count" data-count="2">00</strong><small>Published on GitHub</small></div>
+      <div class="metric-card"><span class="mono">FOCUS AREAS</span><strong class="count" data-count="4">00</strong><small>Code · Web · AI · UI</small></div>
+      <div class="metric-card"><span class="mono">TOOLS ON THE BENCH</span><strong class="count" data-count="9">00</strong><small>And always exploring</small></div>
+    </div>
+    <div class="trajectory">
+      <div class="trajectory-top"><div><span class="mono">THE BUILDING CURVE</span><h3>Learn. Make. <em>Repeat.</em></h3></div><span class="mono trajectory-tag">CURRENT PHASE ↗</span></div>
+      <svg class="trajectory-chart" viewBox="0 0 620 170" role="img" aria-label="Decorative rising curve representing the ongoing learning and building journey">
+        <defs><linearGradient id="curveFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#10b981" stop-opacity=".28"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/></linearGradient></defs>
+        <path class="chart-area" d="M0 145 C65 136 70 116 130 122 S205 96 255 105 S330 68 380 82 S465 28 520 42 S575 14 620 10 L620 170 L0 170Z"/>
+        <path class="chart-line" d="M0 145 C65 136 70 116 130 122 S205 96 255 105 S330 68 380 82 S465 28 520 42 S575 14 620 10"/>
+        <circle class="chart-halo" cx="620" cy="10" r="12"/><circle class="chart-peak" cx="620" cy="10" r="4"/>
+        <path class="chart-grid" d="M0 55H620 M0 105H620 M0 155H620"/>
+      </svg>
+      <div class="trajectory-foot"><span>FIRST IDEA</span><span>EXPERIMENTS</span><span>SHIPPED WORK</span><span class="current-label">CURRENT FOCUS</span></div>
+    </div>
+  </div>
 </section>
 <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Curiosity <b>✳</b> Code with intent <b>✳</b> Learn by making <b>✳</b> Stay experimental <b>✳</b> Curiosity <b>✳</b> Code with intent <b>✳</b> Learn by making <b>✳</b> Stay experimental <b>✳</b></span><span>Curiosity <b>✳</b> Code with intent <b>✳</b> Learn by making <b>✳</b> Stay experimental <b>✳</b> Curiosity <b>✳</b> Code with intent <b>✳</b> Learn by making <b>✳</b> Stay experimental <b>✳</b></span></div></div>
 <section class="section wrap" id="about"><div class="section-top reveal"><div><div class="eyebrow">01 — THE PERSON BEHIND THE PIXELS</div><h2 class="section-title">Not just curious.<br><em>Curiosity in motion.</em></h2></div><p class="section-note">A student, a builder, and a work in progress. Always learning something new.</p></div><div class="about-layout reveal"><div><p class="about-statement">I like understanding how things work — and then seeing if I can make them <em>work better.</em></p><p class="about-copy">My interests sit around Python, web development and AI. I enjoy taking an idea from a rough sketch to a working experiment, learning from what breaks, and improving it one iteration at a time.</p></div><div class="about-facts"><div class="fact"><span>Currently</span><strong>Student developer</strong></div><div class="fact"><span>Exploring</span><strong>Web · Python · AI</strong></div><div class="fact"><span>Approach</span><strong>Learn by building</strong></div><div class="fact"><span>Home base</span><strong>India</strong></div></div></div></section>
@@ -49,6 +126,7 @@ footer{padding:26px 0 35px;display:flex;justify-content:space-between;gap:20px;c
 <footer class="wrap"><span>© 2026 SURYA NEERUKONDA</span><div class="footer-right"><span>MADE WITH CURIOSITY</span><a href="#top">TOP ↑</a></div></footer>
 <script>
 (()=>{const canvas=document.getElementById('artCanvas'),host=document.getElementById('heroArt'),ctx=canvas.getContext('2d');let w=0,h=0,dpr=1,mx=0,my=0,frame=0;const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;function resize(){const r=host.getBoundingClientRect();dpr=Math.min(devicePixelRatio||1,2);w=r.width;h=r.height;canvas.width=w*dpr;canvas.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0)}function point(u,v,t){const twist=t*.22+mx*.65;const a=u*Math.PI*2+twist;const b=v*Math.PI*2;const R=118+18*Math.sin(b*3+t*.6);const x=(R+32*Math.cos(b))*Math.cos(a);const y=(R+32*Math.cos(b))*Math.sin(a);const z=32*Math.sin(b)+20*Math.sin(a*2+t*.4);const tilt=.68+my*.18;const yy=y*Math.cos(tilt)-z*Math.sin(tilt);const zz=y*Math.sin(tilt)+z*Math.cos(tilt);const scale=480/(480+zz);return [w*.5+x*scale,h*.49+yy*scale,zz]}function draw(){frame+=reduce?0:.009;ctx.clearRect(0,0,w,h);const t=frame;const lines=42,steps=60;for(let i=0;i<lines;i++){ctx.beginPath();for(let j=0;j<=steps;j++){const p=point(i/lines,j/steps,t);if(j===0)ctx.moveTo(p[0],p[1]);else ctx.lineTo(p[0],p[1])}const hue=i%3===0?'#ef6844':i%3===1?'#343a32':'#8c9b56';ctx.strokeStyle=hue;ctx.globalAlpha=.24+(i/lines)*.38;ctx.lineWidth=i%5===0?1.15:.65;ctx.stroke()}for(let j=0;j<5;j++){const p=point((j*9+Math.floor(t*8))%lines/lines,.5,t);ctx.beginPath();ctx.arc(p[0],p[1],2.1,0,Math.PI*2);ctx.fillStyle='#ef6844';ctx.globalAlpha=.8;ctx.fill()}ctx.globalAlpha=1;if(!reduce)requestAnimationFrame(draw)}host.addEventListener('pointermove',e=>{const r=host.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5});host.addEventListener('pointerleave',()=>{mx=0;my=0});addEventListener('resize',resize);resize();draw();})();
+document.querySelectorAll('.count').forEach(el=>{const target=Number(el.dataset.count);const start=performance.now();const duration=1500;function tick(now){const p=Math.min((now-start)/duration,1);const eased=1-Math.pow(1-p,4);el.textContent=String(Math.round(target*eased)).padStart(2,'0');if(p<1)requestAnimationFrame(tick)}requestAnimationFrame(tick)});
 const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 const cursor=document.getElementById('cursor');if(matchMedia('(pointer:fine)').matches){let x=0,y=0,tx=0,ty=0;addEventListener('pointermove',e=>{tx=e.clientX;ty=e.clientY});function move(){x+=(tx-x)*.22;y+=(ty-y)*.22;cursor.style.left=x+'px';cursor.style.top=y+'px';requestAnimationFrame(move)}move();document.querySelectorAll('a').forEach(a=>{a.addEventListener('pointerenter',()=>cursor.classList.add('big'));a.addEventListener('pointerleave',()=>cursor.classList.remove('big'))})}
 </script>
