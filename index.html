@@ -97,6 +97,61 @@ footer{color:#7f8b82}.footer-right a:hover{color:var(--acid)}
 #artCanvas{display:none}
 @media(max-width:560px){.scene-hint{top:43px;font-size:7px}.scene-stations{right:10px;bottom:48px;gap:5px}.scene-stations a{font-size:7px;padding:6px 7px}.art-caption{max-width:140px}}
 
+/* Client-transparency SaaS direction — portfolio-wide visual system */
+:root{--paper:#080d0b;--ink:#e9f1eb;--muted:#89978e;--line:#202d25;--acid:#4ade80;--orange:#a3e635;--night:#0b120e}
+body{background:radial-gradient(ellipse at 78% 4%,#10251a 0,transparent 34%),#080d0b;color:var(--ink)}
+.grain{opacity:.025}.wrap{width:min(1320px,calc(100% - 72px))}
+.topbar{height:76px;border:1px solid #1e2c23;border-top:0;border-radius:0 0 14px 14px;padding:0 22px;background:#0b120ee8;box-shadow:0 12px 40px #0003}
+.wordmark span,.hero-kicker,.eyebrow:before{color:var(--acid)}
+.navlinks{gap:9px;color:#9aaba0}.navlinks a{padding:10px 13px;border-radius:7px}.navlinks a:hover{background:#14251a;color:#c5f7d5}
+.nav-note{padding:9px 12px;border:1px solid #263a2d;border-radius:30px;background:#101b14;color:#a4b4a9}
+.hero{min-height:calc(100svh - 76px);padding:72px 0 78px;grid-template-columns:1fr 1.04fr;gap:54px}
+.hero-kicker{background:#102218;border:1px solid #244432;border-radius:30px;padding:9px 13px;width:max-content;font-size:9px}
+.hero h1{font-size:clamp(60px,7.4vw,105px);letter-spacing:-.085em;line-height:.91;margin:28px 0 24px}.hero h1 .stroke{-webkit-text-stroke:1px #a8b9ad}
+.hero-desc{color:#9eada3;font-size:14px;max-width:430px}.hero-desc strong{color:#eff8f1}
+.cta{border-radius:7px;background:linear-gradient(135deg,#4ade80,#a3e635);color:#08110b;padding:14px 17px;box-shadow:0 8px 24px #4ade801c}.cta:hover{background:#b7f78a;color:#08110b}
+.text-link{color:#c0cdc4;border-color:#33473a}.hero-art{border:1px solid #294333;border-radius:16px;box-shadow:0 28px 90px #0007;min-height:490px}
+.art-stamp{border-radius:12px;width:70px;height:70px;transform:rotate(0);border-color:#42624b;background:#0c160fbb;color:#c8f3d2}
+.art-caption{font-family:var(--sans);font-style:normal;font-size:11px;color:#b5c8ba;background:#0b130fba;border:1px solid #2a4332;border-radius:30px;padding:9px 13px;bottom:19px;left:18px}
+.art-label,.art-number,.scene-hint{font-size:8px;color:#a0b5a6}.scene-stations a{border-radius:6px;background:#0b160fdc;border-color:#385743;color:#d4e8d9}
+.hero-aside{color:#82958a}
+.pulse{padding:0 0 76px}.pulse-head{border:1px solid #203328;border-radius:10px 10px 0 0;background:#0d1711;padding:15px 18px;color:#9aafa0}
+.pulse-grid{gap:12px}.pulse-metrics{gap:12px}.metric-card,.trajectory{border:1px solid #24392b;border-radius:10px;background:linear-gradient(145deg,#111d15,#0b130e);box-shadow:0 10px 30px #0002}
+.metric-card{min-height:154px;padding:20px;border-top:2px solid #315e40}.metric-card strong{color:#e7f7eb}.metric-card small{color:#8da194}
+.trajectory{padding:21px 23px}.trajectory h3{color:#eaf4ec}.trajectory-tag{background:#12251a;border-radius:5px}.trajectory-foot{color:#84978a}
+.marquee{background:#0c1710;border-color:#24372b;color:#d4e9d9;padding:12px 0}.marquee b{color:var(--acid)}
+.section{border-color:#203027;padding:105px 0}.eyebrow{color:#91a99a}.section-title{font-size:clamp(40px,5.5vw,68px);letter-spacing:-.075em}.section-title em,.about-statement em{color:#8ee6a5}
+.section-note,.about-copy,.skills-intro{color:#94a398}.about-statement{font-size:clamp(22px,2.6vw,33px)}
+.about-facts{border-color:#3b5142;background:#0d1711;border-radius:10px;padding:0 18px}.fact{border-color:#203027;padding:17px 0}.fact span:first-child{color:#809487}.fact strong{color:#dce9df}
+.work-section{background:#0a100c}.work-list{border-color:#294032;background:#0d1510;border-radius:12px;overflow:hidden}
+.work-card{padding:27px 24px;border-color:#223329;transition:background .25s,padding .25s}.work-card:hover{padding-left:30px;padding-right:30px;background:#122018}
+.work-card h3{font-size:clamp(20px,2.5vw,29px)}.work-card p{color:#9aaba0}.work-card .index{color:#85a18d}
+.work-card .arrow{border-radius:9px;border-color:#395343}.pill{border-radius:30px;background:#111f16;border-color:#2b4433;color:#a9c2b0;padding:5px 9px}
+.skill-cloud{gap:9px}.skill-chip{border:1px solid #2a3b30;background:#0e1711;color:#d4e2d8;border-radius:8px;padding:12px 16px}.skill-chip:nth-child(3n+2){font-family:var(--sans);font-style:normal;font-size:13px}.skill-chip:hover{background:#183321;border-color:#4ade80;color:#dfffea;transform:translateY(-3px)}
+.contact-section{background:linear-gradient(120deg,#10271a,#132c1c 65%,#172d18);color:#e9f4eb;border-top:1px solid #31543b;border-bottom:1px solid #31543b;padding:92px 0}
+.contact-section .eyebrow{color:#a9d9b5}.contact-title{font-size:clamp(54px,8vw,100px)}.contact-title em{color:#9cf0ae}.contact-copy{color:#a9bdb0}
+.contact-links a{border-color:#365740;color:#e1f0e5}.contact-links a:hover{color:var(--acid)}
+footer{color:#829489}.footer-right a:hover{color:var(--acid)}.cursor{border-color:#75ed9b;mix-blend-mode:screen}.cursor.big{background:#4ade8020}
+.mouse-glow{background:radial-gradient(ellipse 600px 520px at var(--mouse-x,50%) var(--mouse-y,50%),rgba(74,222,128,.19) 0%,rgba(74,222,128,.085) 27%,rgba(74,222,128,.025) 54%,transparent 76%);filter:blur(28px)}
+.visibility{padding:0 0 104px}.visibility-shell{border:1px solid #294132;border-radius:14px;background:linear-gradient(145deg,#101b14,#0b120e);overflow:hidden;box-shadow:0 24px 80px #0005}
+.visibility-bar{height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;border-bottom:1px solid #26382c;background:#101a14}
+.visibility-brand{display:flex;align-items:center;gap:9px;font:9px var(--mono);letter-spacing:.1em;color:#c6d9cb;text-transform:uppercase}
+.visibility-logo{width:20px;height:20px;border-radius:6px;background:linear-gradient(135deg,#4ade80,#a3e635);display:grid;place-items:center;color:#07110b;font-size:11px;font-weight:800}
+.visibility-live{font:8px var(--mono);letter-spacing:.08em;color:#9eb3a4}.visibility-live i{display:inline-block;width:6px;height:6px;background:#4ade80;border-radius:50%;margin-right:7px;box-shadow:0 0 10px #4ade80}
+.visibility-body{padding:26px;display:grid;grid-template-columns:1.05fr .95fr;gap:15px}
+.visibility-main,.visibility-side{border:1px solid #263a2c;border-radius:10px;background:#0c1510;padding:21px}
+.visibility-label{font:8px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#82998a}
+.visibility-project{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;margin:13px 0 22px}
+.visibility-project h3{font-size:23px;letter-spacing:-.06em;margin:0 0 6px;color:#e6f2e9}.visibility-project p{font-size:10px;color:#92a499;margin:0;line-height:1.6}
+.status-chip{font:8px var(--mono);white-space:nowrap;color:#a8efb9;border:1px solid #326044;background:#102319;border-radius:30px;padding:7px 9px}
+.progress-meta{display:flex;justify-content:space-between;font:9px var(--mono);color:#9db1a2;margin-bottom:9px}.progress-meta strong{color:#baf6c7;font-weight:500}
+.progress-track{height:7px;border-radius:20px;background:#1d2b21;overflow:hidden}.progress-track span{display:block;width:72%;height:100%;border-radius:20px;background:linear-gradient(90deg,#22c55e,#a3e635);box-shadow:0 0 16px #4ade8055}
+.milestone-list{margin-top:24px;display:grid;gap:15px}.milestone{display:grid;grid-template-columns:18px 1fr auto;gap:10px;align-items:center;font-size:10px;color:#c8d8cd}.milestone-dot{width:16px;height:16px;border:1px solid #46624d;border-radius:50%;display:grid;place-items:center;font-size:9px;color:#4ade80}.milestone.pending .milestone-dot{border-color:#46534a;color:#718077}.milestone small{font:8px var(--mono);color:#819388}
+.activity-list{margin-top:16px;display:grid;gap:15px}.activity{display:flex;gap:10px;align-items:flex-start}.activity-icon{width:25px;height:25px;flex:none;border-radius:7px;background:#14271a;border:1px solid #2c4a35;display:grid;place-items:center;color:#91e8a6;font-size:11px}.activity p{font-size:10px;line-height:1.6;color:#c5d5ca;margin:0}.activity p span{display:block;color:#7f9385;font:8px var(--mono);margin-top:3px}
+.visibility-foot{border-top:1px solid #26382c;padding:13px 20px;display:flex;justify-content:space-between;gap:15px;color:#82958a;font:8px var(--mono);letter-spacing:.08em}
+@media(max-width:850px){.wrap{width:min(100% - 40px,1320px)}.hero{grid-template-columns:1fr;gap:30px}.hero-art{grid-row:1}.visibility-body{grid-template-columns:1fr}}
+@media(max-width:560px){.wrap{width:calc(100% - 32px)}.topbar{padding:0 12px}.navlinks{gap:2px}.navlinks a{padding:8px 7px;font-size:9px}.hero{padding-top:38px}.hero-art{height:360px;min-height:360px}.hero h1{font-size:clamp(58px,15vw,82px)}.pulse-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.metric-card{padding:13px 9px}.metric-card strong{font-size:29px}.visibility{padding-bottom:70px}.visibility-body{padding:12px}.visibility-main,.visibility-side{padding:15px}.visibility-project h3{font-size:19px}.visibility-foot{font-size:7px}.section{padding:78px 0}}
+
 </style>
 </head>
 <body>
@@ -129,6 +184,21 @@ footer{color:#7f8b82}.footer-right a:hover{color:var(--acid)}
       <div class="trajectory-foot"><span>FIRST IDEA</span><span>EXPERIMENTS</span><span>SHIPPED WORK</span><span class="current-label">CURRENT FOCUS</span></div>
     </div>
   </div>
+</section>
+<section class="visibility wrap" aria-label="Interactive project status preview">
+ <div class="visibility-shell reveal">
+  <div class="visibility-bar"><div class="visibility-brand"><span class="visibility-logo">S</span> SURYA / PROJECT SPACE</div><div class="visibility-live"><i></i> LIVE WORKSPACE PREVIEW</div></div>
+  <div class="visibility-body">
+   <div class="visibility-main">
+    <div class="visibility-label">FEATURED BUILD / 001</div>
+    <div class="visibility-project"><div><h3>AI Campus Copilot</h3><p>A student-focused workspace for academic tools and campus information.</p></div><span class="status-chip">IN DEVELOPMENT</span></div>
+    <div class="progress-meta"><span>BUILD PROGRESS</span><strong>72%</strong></div><div class="progress-track"><span></span></div>
+    <div class="milestone-list"><div class="milestone"><span class="milestone-dot">✓</span><span>Core interface and navigation</span><small>DONE</small></div><div class="milestone"><span class="milestone-dot">✓</span><span>Database and authentication setup</span><small>DONE</small></div><div class="milestone"><span class="milestone-dot">↗</span><span>Role-based workspace improvements</span><small>IN PROGRESS</small></div><div class="milestone pending"><span class="milestone-dot">·</span><span>Final polish and release checks</span><small>UP NEXT</small></div></div>
+   </div>
+   <aside class="visibility-side"><div class="visibility-label">RECENT ACTIVITY</div><div class="activity-list"><div class="activity"><span class="activity-icon">↗</span><p>Workspace navigation refined<span>RECENT BUILD</span></p></div><div class="activity"><span class="activity-icon">⌘</span><p>Supabase integration explored<span>DEVELOPMENT NOTE</span></p></div><div class="activity"><span class="activity-icon">✓</span><p>Python learning collection published<span>GITHUB PROJECT</span></p></div></div></aside>
+  </div>
+  <div class="visibility-foot"><span>DESIGNED FOR CLARITY · BUILT IN PUBLIC</span><span>PROJECT DETAILS <b style="color:#a3e635">↗</b></span></div>
+ </div>
 </section>
 <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Curiosity <b>✳</b> Code with intent <b>✳</b> Learn by making <b>✳</b> Stay experimental <b>✳</b> Curiosity <b>✳</b> Code with intent <b>✳</b> Learn by making <b>✳</b> Stay experimental <b>✳</b></span><span>Curiosity <b>✳</b> Code with intent <b>✳</b> Learn by making <b>✳</b> Stay experimental <b>✳</b> Curiosity <b>✳</b> Code with intent <b>✳</b> Learn by making <b>✳</b> Stay experimental <b>✳</b></span></div></div>
 <section class="section wrap" id="about"><div class="section-top reveal"><div><div class="eyebrow">01 — THE PERSON BEHIND THE PIXELS</div><h2 class="section-title">Not just curious.<br><em>Curiosity in motion.</em></h2></div><p class="section-note">A student, a builder, and a work in progress. Always learning something new.</p></div><div class="about-layout reveal"><div><p class="about-statement">I like understanding how things work — and then seeing if I can make them <em>work better.</em></p><p class="about-copy">My interests sit around Python, web development and AI. I enjoy taking an idea from a rough sketch to a working experiment, learning from what breaks, and improving it one iteration at a time.</p></div><div class="about-facts"><div class="fact"><span>Currently</span><strong>Student developer</strong></div><div class="fact"><span>Exploring</span><strong>Web · Python · AI</strong></div><div class="fact"><span>Approach</span><strong>Learn by building</strong></div><div class="fact"><span>Home base</span><strong>India</strong></div></div></div></section>
