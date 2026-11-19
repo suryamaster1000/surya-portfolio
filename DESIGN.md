@@ -22,7 +22,7 @@ A dark, engineering-forward personal portfolio that feels like a live creative c
 - **Buttons:** Mint rectangular primary action with crisp edges, clear hover shift, and tactile active press. Secondary action is quiet text with a thin rule.
 - **Panels:** Dark surfaces with thin green-grey borders and slight radius. Reserve filled panels for the hero visualization and metric hierarchy.
 - **Navigation:** Compact horizontal mono links, active/hover color in mint; collapses to wrapped links on narrow screens.
-- **Orbital graphic:** SVG rings, nodes, and labelled destinations; all labels remain separate and readable. Subtle rotation only on ring strokes.
+- **Orbital graphic:** A real Three.js WebGL sphere with visible latitude and longitude mesh, slow continuous Y-axis rotation, two orbit rings, and labelled DOM destinations. Keep the readable labels above the canvas. A CSS globe remains as a fallback.
 - **Focus:** Visible mint outline with sufficient offset. Minimum 44px interactive targets on touch layouts.
 
 ## 5. Layout Principles
@@ -33,7 +33,7 @@ A dark, engineering-forward personal portfolio that feels like a live creative c
 
 ## 6. Motion & Interaction
 - Use short opacity and transform transitions for hover, reveal, and menu states.
-- The orbital SVG may rotate slowly; pause decorative movement when `prefers-reduced-motion: reduce` is set.
+- The Three.js globe rotates slowly; pause decorative movement when `prefers-reduced-motion: reduce` is set.
 - Keep all animation compositor-friendly and avoid layout-affecting motion.
 
 ## 7. Anti-Patterns (Banned)

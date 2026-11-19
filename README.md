@@ -9,5 +9,5 @@ Open `index.html` in a browser. No build step or backend is required.
 Copy these files into the root of `surya-portfolio` and publish the `main` branch from the repository root in GitHub Pages settings. The existing public site is https://suryamaster1000.github.io/surya-portfolio/.
 
 ## Contents
-- `index.html` — complete responsive portfolio.
+- `index.html` — complete responsive portfolio with an animated Three.js WebGL globe and a CSS fallback.
 - `DESIGN.md` — visual system distilled from the Stitch reference.
