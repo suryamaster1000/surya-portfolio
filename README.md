@@ -1,22 +1,13 @@
-# Surya Neerukonda — PROJECT NEXUS
+# Surya Neerukonda — Portfolio
 
-A responsive, single-file portfolio built with HTML, CSS and vanilla JavaScript.
+A responsive, single-file portfolio rebuilt from the supplied Stitch reference and populated with the content and project links from the existing portfolio.
 
 ## Run locally
-Open `index.html` in a browser.
+Open `index.html` in a browser. No build step or backend is required.
 
 ## Publish with GitHub Pages
-1. Open this repository's **Settings**.
-2. Select **Pages** in the sidebar.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select branch **main** and folder **/(root)**, then save.
-5. Wait for the deployment to finish. Your site will be available at:
+Copy these files into the root of `surya-portfolio` and publish the `main` branch from the repository root in GitHub Pages settings. The existing public site is https://suryamaster1000.github.io/surya-portfolio/.
 
-   https://suryamaster1000.github.io/surya-portfolio/
-
-## Customize
-Edit `index.html` to update the introduction, project descriptions, skills and links. The site has no build step, backend or API key requirement.
-
-## Notes
-- The animated starfield, 3D-inspired centerpiece, scroll reveals and pointer interaction use browser-native CSS and JavaScript.
-- The Manrope and DM Mono fonts are loaded from Google Fonts; system fonts are used as fallbacks.
+## Contents
+- `index.html` — complete responsive portfolio.
+- `DESIGN.md` — visual system distilled from the Stitch reference.
